@@ -1,0 +1,9 @@
+
+
+Reference: Auto Scaling on AWS : https://youtube.com/clip/Ugkxvi0ddVVRMxZdtjh_OZOvsmBHP58cVmvC
+Repository for stress load
+	$sudo yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+package: 
+	$sudo yum install stress -y
+Stress cmd to increase the cpu utilisation upto 300 sec only.
+	$stress --cpu 9 --timeout 300
