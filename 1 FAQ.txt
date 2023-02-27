@@ -1,0 +1,493 @@
+
+
+What is a ECS in AWS?
+Amazon Elastic Container Service (ECS) is a highly scalable, high performance container management service that supports Docker containers and allows you to easily run applications on a managed cluster of Amazon Elastic Compute Cloud (Amazon EC2) instances.
+
+What is difference between ECS and EC2?
+The largest difference for EC2 is that it deploys isolated VM instances with auto scaling support, and ECS deploys scalable clusters of managed Docker containers. Enterprises can use ECS to scale web applications, perform batch processing, and run services in a hybrid environment to deliver better services to users.
+
+Is AWS ECS using Kubernetes?
+Amazon ECS is similar to EKS, but it relies on a proprietary control plane instead of Kubernetes.
+
+What is difference between AWS ECS and Kubernetes?
+Image result
+While ECS is a container orchestration service, EKS is a Kubernetes managed service. ECS is a scalable container orchestration platform that allows users to run, stop, and manage containers in a cluster.
+
+What are the two types of ECS?
+Ans : Primarily, there are two variants of ECS - ECS Credit and ECS Debit. ECS Credit is used by an institution for affording credit to a large number of beneficiaries (for instance, employees, investors etc.)
+
+Is ECS same as Docker?
+Amazon ECS uses Docker images in task definitions to launch containers. Docker is a technology that provides the tools for you to build, run, test, and deploy distributed applications in containers.
+
+Is AWS ECS serverless?
+With ECS Anywhere, AWS engineers manage the backend, so you don't have to worry about operating cluster management software. That's a major advantage if you have wanted to manage containers on your own infrastructure. However, you can still go serverless by directing the tasks and services to AWS Fargate.
+
+Which is better ECS or Kubernetes?
+Multi-cloud
+Well, this is obvious, and the winner is Kubernetes. A compelling reason is that it can be deployed on-prem or any cloud provider, including Azure, Google Cloud, or Amazon. In the case of ECS, the platform is closed code; as a consequence, it has a vendor lock-in and is not cloud-agnostic.
+
+Why Kubernetes is better than ECS?
+Built-in security: Kubernetes creates its own private network with its own isolated, secure networking. Vendor agnostic: Unlike Amazon ECS, Kubernetes is a vendor agnostic platform that can run on any cloud provider or on-premises. Kubernetes workloads are portable and support hybrid and multicloud strategies
+
+Can ECS run without EC2?
+EC2 is a compute service that enables applications to run on AWS, whereas ECS is an AWS service used primarily to orchestrate Docker containers. They can work together, but they don't have to. EC2 runs in a great many instances and environments with ECS being in the picture.
+
+Is AWS ECS Docker?
+Amazon ECS is a highly scalable, high performance container management service that supports Docker containers and allows you to easily run applications on a managed cluster of Amazon EC2 instances.
+
+Is ECS a orchestration?
+Image result
+Amazon ECS is a fully managed container orchestration service that makes it easy for you to deploy, manage, and scale containerized applications.
+
+Is EC2 part of ECS?
+An Amazon ECS container instance is an Amazon EC2 instance that is running the Amazon ECS container agent and has been registered into an Amazon ECS cluster. When you run tasks with Amazon ECS using the EC2 launch type or an Auto Scaling group capacity provider, your tasks are placed on your active container instances.
+
+What is the purpose of ECS?
+ECS is used by institutions for making bulk payment of amounts towards distribution of dividend, interest, salary, pension, etc., or for bulk collection of amounts towards telephone / electricity / water dues, cess / tax collections, loan instalment repayments, periodic investments in mutual funds, etc.
+
+What is the difference between AWS ECR and ECS?
+The primary difference between Amazon ECR and ECS is that while ECR provides the repository that stores all code that has been written and packaged as a Docker image, the ECS takes these files and actively uses them in the deployment of applications.
+
+
+Amazon CloudFront is a content delivery network (CDN) service that helps you distribute your static and dynamic content quickly and reliably with high speed .
+https://aws.amazon.com/cloudfront/
+
+What is CloudFront in AWS?
+Image result for aws CloudFront
+Amazon CloudFront is a web service that speeds up distribution of your static and dynamic web content, such as .html, .css, .js, and image files, to your users. CloudFront delivers your content through a worldwide network of data centers called edge locations.
+
+What is the main benefit of CloudFront?
+Amazon CloudFront offers programmable and secure edge CDN computing capabilities through CloudFront Functions and AWS Lambda@Edge. CloudFront Functions is ideal for high scale and latency sensitive operations like HTTP header manipulations, URL rewrites/redirects, and cache-key normalizations.
+
+What is the difference between S3 and CloudFront?
+Amazon CloudFront works with S3 but copies files from S3 to the outer "edge" of Amazon's servers, allowing for fast retrieval. My tests show that it retrieves files in about half the time of S3. There's a slight increase in price from Amazon S3, but not much.
+
+What are 2 main components of CloudFront?
+The two main components of AWS Cloudfront are content delivery and dynamic content caching.
+
+What is CDN vs CloudFront?
+Amazon CloudFront is a content delivery network (CDN) service built for high performance, security, and developer convenience.
+
+Is AWS CloudFront a firewall?
+AWS WAF is a web application firewall that lets you monitor the HTTP and HTTPS requests that are forwarded to CloudFront, and lets you control access to your content.
+
+Is CloudFront a database?
+CloudFront is a content delivery service that replicates data stored in AWS to other edge locations around the world so it can be served faster when requested by users nearer to that location.
+
+Is CloudFront faster than S3?
+Delivering from Amazon CloudFront
+Now we start seeing a small improvement. With an average response time of 137ms per request, it's almost twice as fast as loading directly from S3, and slightly faster than loading directly from the server.
+
+Is CloudFront static or dynamic?
+Instead, AWS CloudFront uses a cluster of servers and Elastic Load Balancing, or ELB, at the point of origin. These servers are configured to generate content and scale with demands for dynamic content. The dynamic content is then routed in the most efficient way to the client device through a distribution point.
+
+Is CloudFront a cache?
+CloudFront caches your objects based on the values in all of the specified headers. CloudFront also forwards the headers that it forwards by default, but it caches your objects based only on the headers that you specify.
+
+Why use CloudFormation?
+AWS CloudFormation provides users with a simple way to create and manage a collection of Amazon Web Services (AWS) resources by provisioning and updating them in a predictable way. AWS CloudFormation enables you to manage your complete infrastructure or AWS resources in a text file.
+
+How do I use CloudFront with EC2?
+How to set up a CloudFront distribution for Amazon EC2
+Go to the AWS Console.
+Create Amazon EC2 instances.
+Create an Application Load Balancer.
+Create target groups with EC2 instances.
+Create a CloudFront distribution.
+Configure your origin.
+Configure default cache behavior.
+https://aws.amazon.com/cloudfront/getting-started/EC2/
+
+How do I use CloudFront with S3?
+Resolution
+Open the CloudFront console.
+Choose Create Distribution.
+Under Origin, for Origin domain, choose your S3 bucket's REST API endpoint from the dropdown list. ...
+Under Default cache behavior, Viewer, for Viewer Protocol Policy, select HTTP and HTTPS or Redirect HTTP to HTTPS.
+https://aws.amazon.com/premiumsupport/knowledge-center/cloudfront-https-requests-s3/
+
+Is CloudFront public or private?
+private
+By default, your Amazon S3 bucket and all the files in it are private—only the Amazon account that created the bucket has permission to read or write the files. If you want to allow anyone to access the files in your Amazon S3 bucket using CloudFront URLs, you must grant public read permissions to the objects.
+
+Is CloudFront a SaaS?
+Amazon CloudFront, the highly secure and programmable content delivery network (CDN) integrates with Bot Defense SaaS, allowing you to analyze your public-facing application transactions to determine malicious or benign intent.
+
+What is the maximum size of CloudFront?
+30 GB
+The maximum size of a single file that can be delivered through Amazon CloudFront is 30 GB. This limit applies to all Amazon CloudFront distributions.
+
+Is AWS CloudFront a CDN type?
+Amazon CloudFront is a content delivery network (CDN) service built for high performance, security, and developer convenience. You can use Amazon CloudFront to do these tasks: Deliver data through 275+ globally dispersed points of presence (POPs) with automated network mapping and intelligent routing.
+
+Is CloudFront a web server?
+Amazon CloudFront is a web service that speeds up distribution of your static and dynamic web content, such as . html, . css, . js, and image files, to your users.
+
+What is ElastiCache vs CloudFront?
+Image result
+AWS ElastiCache vs.
+Amazon CloudFront seeks to boost the performance of web applications too. But, unlike ElastiCache, it acts as a Content Delivery Network (CDN) — which speeds up the delivery of web-based assets through endpoint caches that are positioned close to the traffic source.
+
+Why is CloudFront cheaper than S3?
+If you use Amazon CloudFront, you don't pay for data transfer out from Amazon services such as S3, EC2 and ELB, you just pay for data transfer from CloudFront to your users and other costs related to it. This is typically more cost-effective than paying for data transfer from regional services.
+
+Does CloudFront use load balancer?
+For a web application or other content that's served by an Application Load Balancer in Elastic Load Balancing, CloudFront can cache objects and serve them directly to users (viewers), reducing the load on your Application Load Balancer.
+
+What is CloudTrail in AWS?
+CloudTrail enables auditing, security monitoring, and operational troubleshooting by tracking user activity and API usage. CloudTrail logs, continuously monitors, and retains account activity related to actions across your AWS infrastructure, giving you control over storage, analysis, and remediation actions.
+
+
+
+
+aws CloudFormation
+
+Provision Infrastructure as Code - AWS CloudFormationhttps://aws.amazon.com › cloudformation
+AWS CloudFormation is an infrastructure as code (IaC) service that allows you to easily model, provision, and manage AWS and third-party resources.
+
+Why would you use AWS CloudFormation?
+AWS CloudFormation is a service that helps you model and set up your AWS resources so that you can spend less time managing those resources and more time focusing on your applications that run in AWS.
+
+What is the difference between AWS Elastic Beanstalk and CloudFormation?
+Image result for aws CloudFormation
+The essential difference between these services is that Beanstalk handles deployment/provisioning for you while CloudFormation requires a lot of input. So one's low effort, low control, and vice versa.
+
+Is AWS CloudFormation same as terraform?
+In short, Terraform is an open-source Infrastructure as Code tool that has the ability to deploy resources to multiple cloud providers, while CloudFormation is an AWS service designed specifically for provisioning AWS resources
+
+What is AWS CloudFormation stack?
+A stack is a collection of AWS resources that you can manage as a single unit. In other words, you can create, update, or delete a collection of resources by creating, updating, or deleting stacks. All the resources in a stack are defined by the stack's AWS CloudFormation template.
+
+What language is AWS CloudFormation?
+An AWS CloudFormation template is a formatted text file in JSON or YAML language that describes your AWS infrastructure.
+
+What are features of AWS CloudFormation?
+Products. ...
+AWS CloudFormation gives you an easy way to model a collection of related AWS and third-party resources, provision them quickly and consistently, and manage them throughout their lifecycles, by treating infrastructure as code. ...
+Extensibility. ...
+Cross account & cross-region management. ...
+Authoring with JSON/YAML.
+https://aws.amazon.com/cloudformation/features/
+
+Is AWS CloudFormation PaaS or IaaS?
+CloudFormation and Elastic Beanstalk are two AWS deployment options. However, they're two quite distinct ways. Beanstalk is a PaaS (platform as a service), but CloudFormation is an IaC (infrastructure as code).
+
+Why Terraform is better than CloudFormation?
+A benefit of Terraform is increased flexibility over CloudFormation with regards to modularity. Terraform modules can be pulled in for any provider supported, or organizations can roll their own.
+
+Which is better Terraform or CloudFormation?
+In CloudFormation, it is possible to manage so-called “custom resources” by using an AWS Lambda function of your own creation as a back end. For Terraform, extensions are much easier to write and form part of the code. So there is an advantage for Terraform in this case. Terraform can handle many cloud vendors.
+
+Is DevOps a CloudFormation?
+To summarize, CloudFormation is a DevOps tool that simplifies provisioning and managing resources. The benefits of using CloudFormation include: Easy-to-read template
+
+Should I learn CloudFormation or Terraform?
+Image result
+If you are looking to provision services on multiple cloud platforms, Terraform is your go-to option. While Terraform supports all cloud vendors like AWS, GCP, Azure, and many others, CloudFormation is confined only to AWS. So, in case your environment involves multiple cloud deployments, Cloudformation is not for you.
+
+Is JSON a CloudFormation?
+For more information about the template syntax for each format, see Template anatomy. AWS CloudFormation follows the ECMA-404 JSON standard. For more information about the JSON format, see http://www.json.org . AWS CloudFormation supports the YAML Version 1.1 specification with a few exceptions.
+
+How does CloudFormation work?
+Image result
+CloudFormation creates a bucket for each region in which you upload a template file. The buckets are accessible to anyone with Amazon Simple Storage Service (Amazon S3) permissions in your AWS account. If a bucket created by CloudFormation is already present, the template is added to that bucket.
+
+What is the concept of cloud formation?
+Image result
+Clouds form when the invisible water vapor in the air condenses into visible water droplets or ice crystals. For this to happen, the parcel of air must be saturated, i.e. unable to hold all the water it contains in vapor form, so it starts to condense into a liquid or solid form.
+
+What is cloud formation called?
+Image result
+The process of water changing from a gas to a liquid is called "condensation," and when gas changes directly into a solid, it is called "deposition." These two processes are how clouds form.
+
+Is AWS cloud or DevOps?
+DevOps Tools
+
+These tools automate manual tasks, help teams manage complex environments at scale, and keep engineers in control of the high velocity that is enabled by DevOps. AWS provides services that are designed for DevOps and that are built first for use with the AWS cloud.
+
+Is AWS CloudFormation free?
+AWS CloudFormation offers an easy and consistent way to model, provision, and manage a collection of related AWS and third-party resources by treating infrastructure as code. You only pay for what you use, with no minimum fees and no required upfront commitments.
+
+Does AWS cloud involve coding?
+To get started here, let us first give you a NO! Because getting started with and learning AWS does not require any coding or programming skills!
+
+What are 2 main components of CloudFront?
+The two main components of AWS Cloudfront are content delivery and dynamic content caching.
+
+What is the difference between stack and template in CloudFormation?
+When you use AWS CloudFormation, you work with templates and stacks. You create templates to describe your AWS resources and their properties. Whenever you create a stack, CloudFormation provisions the resources that are described in your template.
+
+How do I create a CloudFormation template?
+You use the AWS Management Console to complete these tasks.
+Step 1: Pick a template. ...
+Step 2: Make sure you have prepared any required items for the stack. ...
+Step 3: Create the stack. ...
+Step 4: Monitor the progress of stack creation. ...
+Step 5: Use your stack resources. ...
+Step 6: Clean up.
+
+What is the difference between EC2 and CloudFormation?
+Amazon EC2 Container Service can be classified as a tool in the "Containers as a Service" category, while AWS CloudFormation is grouped under "Infrastructure Build Tools". Some of the features offered by Amazon EC2 Container Service are: Docker Compatibility. Managed Clusters.
+
+What are the three types of cloud deployment models?
+Cloud Deployment Models. The three main types of cloud deployment models are private, public, or hybrid. Selecting your desired model depends on your specific requirements.
+https://www.parallels.com/blogs/ras/what-are-the-3-types-of-cloud-computing/#:~:text=Cloud%20Deployment%20Models,depends%20on%20your%20specific%20requirements.
+
+
+Should I learn Terraform or Kubernetes?
+The platform you learn first depends on the DevOps function you'll be performing. If you want to deploy operational infrastructure, learn Terraform first. Developers who work with containers should learn Kubernetes first.
+https://blog.purestorage.com/purely-informational/terraform-vs-kubernetes-key-differences/#:~:text=The%20platform%20you%20learn%20first,containers%20should%20learn%20Kubernetes%20first.
+
+What is the difference between Docker and CloudFormation?
+AWS CloudFormation belongs to "Infrastructure Build Tools" category of the tech stack, while Docker can be primarily classified under "Virtual Machine Platforms & Containers".
+https://stackshare.io/stackups/aws-cloudformation-vs-docker#:~:text=AWS%20CloudFormation%20belongs%20to%20%22Infrastructure,Virtual%20Machine%20Platforms%20%26%20Containers%22.
+
+What is Terraform used for?
+Terraform is an IAC tool, used primarily by DevOps teams to automate various infrastructure tasks. The provisioning of cloud resources, for instance, is one of the main use cases of Terraform. It's a cloud-agnostic, open-source provisioning tool written in the Go language and created by HashiCorp.
+https://www.varonis.com/blog/what-is-terraform#:~:text=Terraform%20is%20an%20IAC%20tool,language%20and%20created%20by%20HashiCorp.
+
+What is the best way to learn CloudFormation?
+Top 6 Online Courses to learn AWS CloudFormation for Beginners in 2022
+AWS CloudFormation MasterClass. ...
+Mastering AWS CloudFormation Templates Using JSON. ...
+Automating AWS with CloudFormation [Pluralsight] ...
+AWS CloudFormation — Simplified | Hands-On with YAML. ...
+Building Architectures with AWS CloudFormation [Udemy]
+https://medium.com/javarevisited/6-best-aws-cloudformation-online-courses-for-beginners-28156ceacf8c
+
+
+
+CloudWatch
+Amazon CloudWatch collects and visualizes real-time logs, metrics, and event data in automated dashboards to streamline your infrastructure and application maintenance.
+https://aws.amazon.com/cloudwatch/
+
+What is the CloudWatch in AWS?
+Amazon CloudWatch is a monitoring and management service that provides data and actionable insights for AWS, hybrid, and on-premises applications and infrastructure resources.
+
+What is AWS CloudWatch monitoring?
+Amazon CloudWatch monitors your Amazon Web Services (AWS) resources and the applications you run on AWS in real time. You can use CloudWatch to collect and track metrics, which are variables you can measure for your resources and applications.
+
+What is AWS CloudTrail vs CloudWatch?
+Image result for aws CloudWatch
+CloudWatch is a monitoring service for AWS resources and applications. CloudTrail is a web service that records API activity in your AWS account. CloudWatch monitors applications and infrastructure performance in the AWS environment. CloudTrail monitors actions in the AWS environment.
+
+What is CloudWatch logs used for?
+CloudWatch Logs enables you to see all of your logs, regardless of their source, as a single and consistent flow of events ordered by time, and you can query them and sort them based on other dimensions, group them by specific fields, create custom computations with a powerful query language, and visualize log data in ...
+https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html#:~:text=CloudWatch%20Logs%20enables%20you%20to%20see%20all%20of%20your%20logs,and%20visualize%20log%20data%20in
+
+
+Is CloudWatch a monitoring tool?
+Amazon CloudWatch is a monitoring service for Amazon Web Services cloud resources and the applications you run on Amazon Web Services. You can use Amazon CloudWatch to collect and track metrics, collect and monitor log files, set alarms, and automatically react to changes in your Amazon Web Services resources.
+
+Is CloudWatch a database?
+Amazon CloudWatch is a metrics repository. The repository collects and processes raw data from Amazon RDS into readable, near real-time metrics.
+
+What is CloudWatch in AWS interview questions?
+Image result
+CloudWatch is a tool provided by Amazon Web Services that monitors and reports on the performance of various AWS resources and services. CloudTrail, on the other hand, is a log of all actions in your AWS environment since it was first launched.
+
+Where does CloudWatch store data?
+Resource metadata is stored in Amazon DynamoDB. The data is encrypted at rest by default, using AWS owned keys.
+
+
+What is difference between CloudWatch and CloudWatch logs?
+Image result
+CloudWatch Logs reports on application logs, while CloudTrail Logs provide you specific information on what occurred in your AWS account. CloudWatch Events is a near real time stream of system events describing changes to your AWS resources. CloudTrail focuses more on AWS API calls made in your AWS account.
+
+What is CloudTrail used for?
+CloudTrail enables auditing, security monitoring, and operational troubleshooting by tracking user activity and API usage. CloudTrail logs, continuously monitors, and retains account activity related to actions across your AWS infrastructure, giving you control over storage, analysis, and remediation actions.
+
+What are the two types of monitoring CloudWatch offers?
+CloudWatch provides two categories of monitoring: basic monitoring and detailed monitoring. Many AWS services offer basic monitoring by publishing a default set of metrics to CloudWatch with no charge to customers. By default, when you start using one of these AWS services, basic monitoring is automatically enabled.
+
+What is Lambda and CloudWatch?
+Lambda automatically monitors Lambda functions on your behalf and reports metrics through Amazon CloudWatch. To help you monitor your code when it runs, Lambda automatically tracks the number of requests, the invocation duration per request, and the number of requests that result in an error.
+
+What are metrics in CloudWatch?
+Metrics are the fundamental concept in CloudWatch. A metric represents a time-ordered set of data points that are published to CloudWatch. Think of a metric as a variable to monitor, and the data points as representing the values of that variable over time.
+
+Is Amazon CloudWatch is a storage service?
+Monitor bucket storage using CloudWatch, which collects and processes storage data from Amazon S3 into readable, daily metrics. These storage metrics for Amazon S3 are reported once per day and are provided to all customers at no additional cost.
+
+What does CloudWatch collect?
+Image result
+Amazon CloudWatch collects and visualizes real-time logs, metrics, and event data in automated dashboards to streamline your infrastructure and application maintenance.
+
+How do I monitor logs with CloudWatch?
+When the CloudWatch dashboard appears, click on the Logs option, and then click on the number of metric filters that is displayed within your log group. (The number of metric filters will initially be set at zero.) If no log groups exist, you will have to create a log group before continuing.
+
+Is AWS CloudWatch a SaaS?
+Image result
+As a SaaS service provider, AWS facilitates its clients with complete solutions that is completely run and managed by AWS. Businesses don't have to worry about issues like how to maintain the service or essential infrastructure and instead focus on innovation and business logic.
+
+Is CloudTrail a monitoring tool?
+Image result
+AWS CloudTrail monitors and records account activity across your AWS infrastructure, giving you control over storage, analysis, and remediation actions.
+
+
+FSx 
+Amazon FSx makes it easy and cost effective to launch, run, and scale feature-rich, high-performance file systems in the cloud. It supports a wide range of workloads with its reliability, security, scalability, and broad set of capabilities. Amazon FSx is built on the latest AWS compute, networking, and disk technologies to provide high performance and lower TCO. And as a fully managed service, it handles hardware provisioning, patching, and backups -- freeing you up to focus on your applications, your end users, and your business.
+You can choose between four widely-used file systems: NetApp ONTAP, OpenZFS, Windows File Server, and Lustre.
+
+What is FSx on AWS?
+Amazon FSx is built on the latest AWS compute, networking, and disk technologies to provide high performance and lower TCO. And as a fully managed service, it handles hardware provisioning, patching, and backups -- freeing you up to focus on your applications, your end users, and your business.
+
+What is difference between EFS and FSx?
+You can use EFS and FSx interchangeably for most applications that support network file shares. But EFS is better for applications designed for heterogeneous environments and those that run on Linux systems.
+
+What is FSx for Windows in AWS? What is FSx for Windows File Server? 
+Amazon FSx for Windows File Server provides fully managed Microsoft Windows file servers, backed by a fully native Windows file system. FSx for Windows File Server has the features, performance, and compatibility to easily lift and shift enterprise applications to the AWS Cloud.
+
+Is FSx faster than S3?
+In addition, Amazon FSx for Lustre now provides up to 2x the data transfer speeds between your Amazon S3 bucket and your FSx for Lustre file system, allowing you to complete your processing workloads even faster.
+
+Why use FSx?
+The file systems provided by FSx are designed to provide sustained high speeds for read/write operations, as well as consistent low latency data access. The service lets you choose the throughput level and storage type that best match your requirements. You can increase storage capacity at any time.
+
+Which is better EFS or EBS?
+Although the baseline performance is fast enough for most workloads, it's unable to provide the low disk latency per IO operation like EBS. On the other hand, EFS – being a distributed file storage system – can handle a much higher throughput per second compared to EBS.
+
+Does EC2 use EFS?
+Amazon EFS provides scalable file storage for use with Amazon EC2. You can use an EFS file system as a common data source for workloads and applications running on multiple instances.
+
+Does AWS FSx support NFS?
+FSx for ONTAP file systems support accessing data from a wide variety of compute instances and operating systems. It does this by supporting access using the Network File System (NFS) protocol (v3, v4. 0, v4. 1 and v4.
+
+How do I Create a FSx in AWS?
+Open the Amazon FSx console at https://console.aws.amazon.com/fsx/ . On the dashboard, choose Create file system to start the file system creation wizard. On the Select file system type page, choose FSx for Windows File Server, and then choose Next. The Create file system page appears.
+https://docs.aws.amazon.com/fsx/latest/WindowsGuide/getting-started-step1.html#:~:text=Open%20the%20Amazon%20FSx%20console,Create%20file%20system%20page%20appears.
+
+What is the maximum size of AWS FSx?
+64 TB
+Amazon FSx provides storage of up to 64 TB per file system.
+
+How much storage is FSx?
+The file system has a storage capacity of 300 GB, and there is a pending administrative action to increase the storage capacity to 1000 GB. Amazon FSx processes the FILE_SYSTEM_UPDATE action first, adding the new larger storage disks to the file system.
+
+How does FSx work?
+Amazon FSx takes daily automatic backups of your file systems, and allows you to take additional backups at any point. Amazon FSx backups are incremental, which means that only the changes after your most recent backup are saved, thus saving on backup storage costs by not duplicating data.
+
+What API does FSx use?
+The Amazon FSx API is a network protocol based on HTTP (RFC 2616) . For each API call, you make an HTTP request to the region-specific Amazon FSx API endpoint for the AWS Region where you want to manage file systems. The API uses JSON (RFC 4627) documents for HTTP request/response bodies.
+
+How to mount FSX to EC2?
+To update the /etc/fstab file in your EC2 instance
+Connect to your EC2 instance, and open the /etc/fstab file in an editor.
+Add the following line to the /etc/fstab file. Mount the Amazon FSx for Lustre file system to the directory that you created. ...
+Save the changes to the file.
+
+Why EBS is faster than S3?
+Image result
+EBS and EFS are both faster than Amazon S3, with high IOPS and lower latency. EBS is scalable up or down with a single API call. Since EBS is cheaper than EFS, you can use it for database backups and other low-latency interactive applications that require consistent, predictable performance.
+
+Can we store files in EBS?
+EBS is a block storage service, which means all data within EBS is stored in equally sized blocks. This system offers some performance advantages over traditional storage, and generally boasts lower latency, too.
+
+Which is faster EBS or EFS?
+For performance, Amazon EBS is the fastest due to high IOPS, but when it comes to shared and scalable file systems Amazon EFS is the best option.
+
+What is difference between EBS and EFS?
+Image result
+EFS automatically scales as users upload and delete files. EBS volumes can scale vertically by reconfiguring volume types and horizontally by managing additional EC2 volumes. Both storage types offer low-latency, consistent connections and high availability (99.999%). They can also scale as needs dictate.
+
+Is EFS a VPC?
+Image result
+You can mount an Amazon EFS file system in your virtual private cloud (VPC), through the Network File System versions 4.0 and 4.1 (NFSv4) protocol. We recommend using a current generation Linux NFSv4.
+
+Can Lambda Access FSx?
+Image result
+Integrating AWS Lambda with Amazon FSx file shares allows you to share data across function invocations unlocking new use cases for Lambda such as automatically saving files to Windows home directories, taking programmatic actions upon file change events, or use cases simply requiring a larger and persistent data store 
+
+What port does FSx use?
+To create a security group for Amazon FSx
+Protocol	Ports	Role
+TCP/UDP	53	Domain Name System (DNS)
+TCP/UDP	88	Kerberos authentication
+TCP/UDP	464	Change/Set password
+TCP/UDP	389	Lightweight Directory Access Protocol (LDAP)
+9 more rows
+https://docs.aws.amazon.com/fsx/latest/WindowsGuide/limit-access-security-groups.html
+
+
+
+CodePipeline
+
+What is an AWS CodePipeline?
+Image result for aws CodePipeline
+AWS CodePipeline is a fully managed continuous delivery service that helps you automate your release pipelines for fast and reliable application and infrastructure updates.
+
+What is the difference between CodePipeline and CodeDeploy?
+Image result for aws CodePipeline
+CodePipeline builds, tests, and deploys your code every time there is a code change, based on the release process models you define. AWS CodeDeploy belongs to "Deployment as a Service" category of the tech stack, while AWS CodePipeline can be primarily classified under "Continuous Deployment".
+
+
+Is AWS CodePipeline same as Jenkins?
+CodePipeline is an AWS managed service, meaning, it does not require management nor maintenance-overhead once it has been set up. Jenkins server on the other hand requires ongoing management of Jenkins itself, its plugins, integrations and the hosting OS (e.g. Linux or Windows).
+
+Is CodePipeline CI CD?
+Image result for aws CodePipeline
+Amazon Web Services (AWS) provides a collection of CI/CD tools to help accelerate software development and release lifecycles. AWS CodePipeline, for example, can automate the build, testing, and deployment phases for every code change according to defined release models.
+
+How do you run a pipeline in CodePipeline?
+Start a pipeline manually (CLI)
+Open a terminal (Linux, macOS, or Unix) or command prompt (Windows) and use the AWS CLI to run the start-pipeline-execution command, specifying the name of the pipeline you want to start. ...
+To verify success, view the returned object.
+
+Start a pipeline manually - AWS CodePipeline 
+https://docs.aws.amazon.com/codepipeline/latest/userguide/pipelines-rerun-manually.html
+
+What is AWS data pipeline used for?
+AWS Data Pipeline is a web service that helps you reliably process and move data between different AWS compute and storage services, as well as on-premises data sources, at specified intervals.
+
+Is AWS CodePipeline serverless?
+You can use AWS CodePipeline to continuously deliver your AWS SAM serverless application to the AWS Serverless Application Repository.
+
+Is AWS CodeCommit same as Git?
+Using Git with AWS
+You can use AWS CodeCommit to work with Git. CodeCommit is a fully managed source control service that makes it easy to host secure and highly scalable private Git repositories. CodeCommit eliminates the need to operate your own source control system or worry about scaling its infrastructure.
+https://aws.amazon.com/devops/source-control/git/#:~:text=Using%20Git%20with%20AWS,worry%20about%20scaling%20its%20infrastructure.
+
+Is CodeDeploy same as Jenkins?
+Image result
+AWS CodeDeploy belongs to "Deployment as a Service" category of the tech stack, while Jenkins can be primarily classified under "Continuous Integration". Some of the features offered by AWS CodeDeploy are: AWS CodeDeploy fully automates your code deployments, allowing you to deploy reliably and rapidly.
+
+Is CodePipeline better than Jenkins?
+Image result
+Scalability. When using CodePipeline, each pipeline run executes independently and in parallel with each other. Since CodePipeline is a managed service, you can run many pipelines in parallel without having to deal with additional infrastructure. Jenkins on the other hand is limited by the number of executors you have.
+
+Is Jenkins CI or CD or both?
+Jenkins is an open-source automation tool for Continuous Integration (CI) and Continuous Deployment (CD). It is a server-based system that runs in servlet containers like Apache Tomcat.
+
+Why Jenkins is called CI tool?
+Jenkins is an open-source implementation of a Continuous Integration server written in Java. It works with multiple programming languages and can run on various platforms (Windows, Linux, and macOS). It is widely used as a CI (Continuous Integration) & CD (Continuous Delivery) tool.
+
+What are the CodePipeline phases?
+Image result
+Valid CodePipeline action types are source , build , test , deploy , approval , and invoke .
+https://docs.aws.amazon.com/codepipeline/latest/userguide/concepts.html#:~:text=Valid%20CodePipeline%20action%20types%20are,deploy%20%2C%20approval%20%2C%20and%20invoke%20.
+
+How does CodePipeline work?
+AWS CodePipeline is a continuous delivery service you can use to model, visualize, and automate the steps required to release your software. You can quickly model and configure the different stages of a software release process. CodePipeline automates the steps required to release your software changes continuously.
+
+What is the difference between CI and CD in DevOps?
+CI stands for continuous integration, a fundamental DevOps best practice where developers frequently merge code changes into a central repository where automated builds and tests run. But CD can either mean continuous delivery or continuous deployment.
+
+What is a pipeline in DevOps?
+Image result
+A DevOps pipeline is a set of automated processes and tools that allows both developers and operations professionals to work cohesively to build and deploy code to a production environment.
+
+How do I create a CodePipeline?
+Create a pipeline (console)
+Step 1: Create and name your pipeline. Sign in to the AWS Management Console and open the CodePipeline console at http://console.aws.amazon.com/codesuite/codepipeline/home . ...
+Step 2: Create a source stage. ...
+Step 3: Create a build stage. ...
+Step 4: Create a deployment stage. ...
+Step 5: Review the pipeline.
+https://docs.aws.amazon.com/codepipeline/latest/userguide/pipelines-create.html
+
+What is CodeCommit in aws?
+AWS CodeCommit is a secure, highly scalable, managed source control service that makes it easier for teams to collaborate on code. AWS CodeCommit eliminates the need for you to operate your own source control system or worry about scaling its infrastructure.
+
+
+
+
