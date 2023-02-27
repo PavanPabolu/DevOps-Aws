@@ -61,15 +61,5 @@ Getting started with Amazon EKS https://docs.aws.amazon.com/eks/latest/userguide
 
 ------------------------------------------------------------------------------------------------------------------------------
 
-Host ASP.NET Core on Linux with Nginx
-https://learn.microsoft.com/en-us/aspnet/core/host-and-deploy/linux-nginx?view=aspnetcore-6.0&tabs=linux-ubuntu
 
-How to host ASP.NET Core on Linux using Nginx?
-https://setu677.medium.com/how-to-host-asp-net-core-on-linux-using-nginx-85339560e929
-
-How to set up CI/CD server using Jenkins connected to a Bitbucket repository for an ASP.NET Core Web API running in an EC2 instance?
-https://setu677.medium.com/how-to-set-up-ci-cd-server-using-jenkins-connected-to-a-bitbucket-repository-for-an-asp-net-c2b9fced09d5
-
-How to upload large files to AWS S3 in ASP.NET web service using Multipart Upload API?
-https://setu677.medium.com/how-to-upload-large-files-to-aws-s3-in-asp-net-web-service-using-multipart-upload-api-1e83a17a6754
 
