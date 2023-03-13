@@ -1,3 +1,5 @@
+Ref: https://github.com/keenanromain/AWS-SAA-C02-Study-Guide/blob/master/README.md
+
 # AWS SAA-C02 Study Guide
 This study guide will help you pass the newer AWS Certified Solutions Architect - Associate exam. Ideally, you should reference this guide while working through the following material:
 
