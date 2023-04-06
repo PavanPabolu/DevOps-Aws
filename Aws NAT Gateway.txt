@@ -1,0 +1,124 @@
+
+
+Google search: is aws internet gateway for public or private subnet
+
+Does NAT gateway go in public or private subnet?
+Image result for is aws internet gateway for public or private subnet
+A NAT Gateway is an AWS service that allows a private subnet to have access to the Internet, but prevents the Internet from initiating a connection directly to the instances. While the NAT Gateway is needed for private subnets to have Internet access, it is created in a public subnet.
+
+How do I know if my AWS subnet is public or private?
+A public subnet is a subnet that is associated with a route table that has a route to an Internet gateway. This connects the VPC to the Internet and to other AWS services. A private subnet is a subnet that is associated with a route table that doesn't have a route to an internet gateway.
+
+Can AWS private subnet access internet?
+Image result for is aws internet gateway for public or private subnet
+The instances in the public subnet can send outbound traffic directly to the internet, whereas the instances in the private subnet can't. Instead, the instances in the private subnet can access the internet by using a network address translation (NAT) gateway that resides in the public subnet.
+
+Does Internet gateway have public IP?
+Image result
+An internet gateway enables resources in your public subnets (such as EC2 instances) to connect to the internet if the resource has a public IPv4 address or an IPv6 address. Similarly, resources on the internet can initiate a connection to resources in your subnet using the public IPv4 address or IPv6 address.
+
+Can a NAT gateway be in a private subnet?
+A NAT gateway is a Network Address Translation (NAT) service. You can use a NAT gateway so that instances in a private subnet can connect to services outside your VPC but external services cannot initiate a connection with those instances.
+
+What is difference between NAT gateway and Internet Gateway?
+A NAT device forwards traffic from the instances in the private subnet to the internet or other AWS services, and then sends the response back to the instances while Internet Gateway is used to allow resources in your VPC to access internet.
+
+What is an AWS Internet Gateway?
+An Amazon Web Services (AWS) Internet Gateway (IGW) allows external users and endpoints to initiate communication with your AWS resources, such as Elastic Compute Cloud (EC2) instances and containers.
+
+What are the 3 private subnets?
+Private Address Ranges
+Class A: 10.0. 0.0 to 10.255. 255.255.
+Class B: 172.16. 0.0 to 172.31. 255.255.
+Class C: 192.168. 0.0 to 192.168. 255.255.
+
+How do I access internet from EC2 in private subnet?
+Solution:
+Create a TCP network load balancer: Internet facing. ...
+Create an instance based target group: ...
+Once the target instances (API servers) become healthy, you will be able to access the API endpoints from the public internet directly using the new TCP load balancer DNS name or elastic IP address on port 5000.
+
+Can a private IP access the internet?
+A private IP address cannot be used to access the Internet and remains only in the local network. Since a private IP address never leaves the LAN, the same private IPs appear on different private networks, and they only have to be unique within that single local network.
+
+Should EC2 instances be in private or public subnet?
+As best practice, all EC2 instances that are not Internet-facing should run within a private subnet, behind a NAT gateway that allows downloading software updates and implementing security patches or accessing other AWS resources like SQS and SNS.
+
+Does AWS Internet gateway need elastic IP?
+The security groups and network access control lists (ACL) associated with your VPC must allow traffic to flow to and from the internet. Resources in your subnet must have a public IP address or an attached Elastic IP address.
+
+What is my public IP subnet and gateway?
+Use the IPCONFIG Command
+Type “ipconfig” at the prompt and press “Enter.” This command displays all network interfaces and their configurations, including IP addresses, subnet masks and default gateway.
+
+Which IP is used for gateway?
+In most cases, the default gateway IP address is the private IP address assigned to the router. This is the address that the router uses to communicate with a local home network.
+
+How do you use a NAT gateway with a private subnet?
+Define NAT Gateway Routing in Private Subnet
+Make sure NAT Gateway is up and running.
+Click on Routing Table and select private subnet where you want to enable internet access.
+Create Edit and enter 0.0.0.0/0 in the source and select your NAT from the list.
+Click Save.
+
+Can gateway be outside subnet?
+The default gateway has to be on the same subnet as the IP address of the device. It's typically the router's IP address of the network that you're connecting to.
+
+Do I need a NAT gateway and an Internet gateway?
+A NAT gateway must be created in a VPC with an internet gateway. Create and attach an internet gateway to your VPC. For more information, see Create and attach an internet gateway. The Elastic IP address that you specified is already associated with another resource, and cannot be associated with the NAT gateway.
+
+How many internet gateways can you have per VPC?
+You can't have more than 255 gateway endpoints per VPC. This is the combined quota for the maximum number of interface endpoints and Gateway Load Balancer endpoints in a VPC. To increase this quota, contact AWS Support.
+
+What are the 2 types of a gateway?
+There are two main types of gateways: unidirectional gateways and bidirectional gateways.
+
+Does AWS NAT gateway use Internet gateway?
+Internet Gateway is required to provide internet access to the NAT Gateway. However, some customers use their NAT Gateways with Transit Gateway or virtual private gateway to communicate privately with other VPCs or on-premises environments and thus, do not need an internet gateway attached to their VPCs
+
+Is Internet gateway a firewall?
+A gateway is used to link two separate networks together, allowing users to communicate across several networks. In contrast, a firewall secures a network by deciding which data packets are allowed to pass through a network.
+
+What are the three type of gateways present in AWS?
+Image result
+To support these use cases AWS provides three different types of gateways: File Gateway, Volume Gateway, and Tape Gateway.
+
+Is a VPC a private subnet?
+A default VPC includes an internet gateway, and each default subnet is a public subnet. Each instance that you launch into a default subnet has a private IPv4 address and a public IPv4 address. These instances can communicate with the internet through the internet gateway.
+
+How do I know if my IP is public or private?
+How to tell if an IP address is public or private. You can check an IP address against the ranges for public vs private IP addresses to see if a particular IP address is public or private. All private IP addresses begin with 10, 172, or 192, though some public IP addresses may also begin with 172 and 192
+
+Can VPC have only private subnet?
+The configuration for this scenario includes a virtual private cloud (VPC) with a single private subnet, and a virtual private gateway to enable communication with your own network over an IPsec VPN tunnel.
+
+Does EC2 in private subnet have public IP?
+The main purpose of ec2 instances launching in a private subnet is to have only private Ip address (No public IP). So that the instances can never be reached from internet, so it prevents direct attacks on the system and applications in the system.15-Apr-2021
+
+Can I connect to EC2 without public IP?
+If the instance does not have a public IP address, you can connect to the instance over a private network using an SSH client or the EC2 Instance Connect CLI. For example, you can connect from within the same VPC or through a VPN connection, transit gateway, or Amazon Direct Connect.
+
+What is the difference between public IP and private IP?
+A public IP address identifies you to the wider internet so that all the information you're searching for can find you. A private IP address is used within a private network to connect securely to other devices within that same network.
+
+Is 192.168 private or public?
+Public IP Address vs. Private IP Address: Overview
+Category	Private IP Address
+Utility	Used to communicate between devices on a local network
+Range	10.0.0.0 — 10.255.255.255 172.16.0.0 — 172.31.255.255 192.168.0.0 — 192.168.255.255
+Price	Free: assigned by your router
+Traceability	Traceable by other devices on the local network
+How to view		Using system settings and preferences		Search for “What is my IP address” on Google
+Uniqueness		Not unique, resued by different routers		Completely unique code not used by other devices
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,112 @@
+
+
+Amazon ECS:
+Amazon Elastic Container Service (Amazon ECS) is a highly scalable and fast container management service. You can use it to run, stop, and manage containers on a cluster. With Amazon ECS, your containers are defined in a task definition that you use to run an individual task or task within a service.
+
+What is an ECS in AWS?
+Amazon Elastic Container Service (ECS) is a highly scalable, high performance container management service that supports Docker containers and allows you to easily run applications on a managed cluster of Amazon Elastic Compute Cloud (Amazon EC2) instances.
+
+What are the two types of ECS?
+Ans : Primarily, there are two variants of ECS - ECS Credit and ECS Debit.
+
+How does ECS work?
+Image result for ecs full form in cloud computing
+ECS runs your containers on a cluster of Amazon EC2 (Elastic Compute Cloud) virtual machine instances pre-installed with Docker. It handles installing containers, scaling, monitoring, and managing these instances through both an API and the AWS Management Console.
+
+What is ECS platform?
+The ECS platform is composed of the data services, portal, storage engine, fabric, infrastructure, and hardware component layers. ECS component layers. Data services. The data services component layer provides support for access to the ECS object store through object, HDFS, and NFS v3 protocols.
+
+What is the advantage of ECS?
+The benefits of ECS debit given to the clients are as follows: Trouble-free: Eliminates the need to go to the collection centres or banks and the need to stand in long queues for payment. Easy to track: Customers are not required to track down payments by last dates. The ECS users would monitor the debts.
+
+What are the main components of ECS?
+Image result
+Amazon ECS components
+Clusters. An Amazon ECS cluster is a logical grouping of tasks or services. ...
+Containers and images. To deploy applications on Amazon ECS, your application components must be configured to run in containers. ...
+Task definitions. ...
+Tasks. ...
+Services. ...
+Container agent. ...
+Fargate architecture overview.
+Amazon ECS components - Amazon Elastic Container Service https://docs.aws.amazon.com/AmazonECS/latest/developerguide/welcome-features.html
+
+What is ECS vs EC2?
+Image result for ecs full form in cloud computing
+EC2, ECS is primarily used to orchestrate Docker containers and EC2 is a computing service that enables applications to run on AWS. ECS resources are scalable, just like EC2. However, ECS scales container clusters on-demand, rather than scaling compute resources like EC2.
+
+What is the difference between ECS and lambda?
+Image result
+Generally, ECS is best used for running a Docker environment on AWS using clustered instances. Lambda is best used for quickly deploying small, on-demand applications in a serverless environment.
+
+Is ECS using Docker?
+Amazon ECS uses Docker images in task definitions to launch containers. Docker is a technology that provides the tools for you to build, run, test, and deploy distributed applications in containers.
+
+Is ECS a Docker?
+ECS is a managed service to run containers using Docker. ECS sits on top of Docker as it allows you to launch, set up, and monitor your Docker containers on your ECS cluster.
+
+Is ECS using Kubernetes?
+Amazon ECS is similar to EKS, but it relies on a proprietary control plane instead of Kubernetes.
+
+What is ECS DevOps?
+ECS uses DevOps to help customers leverage the benefits of cloud computing and realize optimized results. We help customers find the right mix of products, tools, and practices to rapidly and reliably build and deliver products for their internal and external customers.
+
+Does ECS create EC2?
+No. AWS ECS is just a logical grouping (cluster) of EC2 instances, and all the EC2 instances part of an ECS act as Docker host i.e. ECS can send command to launch a container on them ( EC2 ). If you already have an EC2, and then launch ECS, you'll still have a single instance.
+
+Is ECS a container service?
+Image result
+Amazon ECS is a fully managed container orchestration service that makes it easy for you to deploy, manage, and scale containerized applications.
+
+Is ECS a serverless?
+AWS Fargate is a serverless compute engine for containers that works with both Amazon Elastic Container Service (ECS) and Amazon Elastic Kubernetes Service (EKS).
+
+Is ECS a Microservice?
+Is ECS a microservices? Yes, Amazon Elastic Container Service (ECS) is a microservices-based container orchestration platform. It enables developers to quickly deploy, manage, and scale containerized applications.
+
+Why ECS is used in AWS?
+Amazon Elastic Container Service (Amazon ECS) allows you to easily deploy containerized workloads on AWS. The powerful simplicity of Amazon ECS enables you to grow from a single Docker container to managing your entire enterprise application portfolio.
+
+How many containers can run in ECS?
+You can now launch up to 5,000 instances per cluster, an increase from 2,000. The limit increase enables customers to scale further and improve manageability of their clusters.
+
+
+What is Docker used for?
+Docker is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your infrastructure so you can deliver software quickly. With Docker, you can manage your infrastructure in the same ways you manage your applications.
+
+How do you deploy in ECS?
+Image result
+These steps include:
+Create an AWS CodeDeploy application by specifying a name that uniquely represents what you want to deploy. ...
+Set up a deployment group by specifying: ...
+Specify an application specification file (AppSpec file). ...
+Deploy your application revision. ...
+Check the deployment results.
+
+What is AWS ECR and ECS?
+The primary difference between Amazon ECR and ECS is that while ECR provides the repository that stores all code that has been written and packaged as a Docker image, the ECS takes these files and actively uses them in the deployment of applications.
+
+What are different types of ECS?
+Ans: There are two types of ECS called ECS (Credit) and ECS (Debit). ECS (Credit) is used for affording credit to a large number of beneficiaries by raising a single debit to an account, such as dividend, interest or salary payment.
+
+When should I use ECS?
+You can use Amazon ECS to create a consistent build and deployment experience, to manage and scale batch and Extract-Transform-Load (ETL) workloads, and to build sophisticated application architectures on a microservices model.
+
+Is Docker part of AWS?
+Image result
+Running Docker on AWS provides developers and admins a highly reliable, low-cost way to build, ship, and run distributed applications at any scale. Recent announcements: Docker collaborates with AWS to help developers speed delivery of modern apps to the cloud.
+
+Does ECS use load balancer?
+Your Amazon ECS service can optionally be configured to use Elastic Load Balancing to distribute traffic evenly across the tasks in your service. When you use tasks sets, all the tasks in the set must all be configured to use Elastic Load Balancing or to not use Elastic Load Balancing.
+
+What is difference between ECS and EKS?
+Image result
+ECS is a scalable container orchestration platform that allows users to run, stop, and manage containers in a cluster. EKS, on the other hand, helps teams to build Kubernetes clusters on AWS without having to install Kubernetes on EC2 compute instances manually.
+
+
+What is the difference between launch template and launch configuration in EC2?
+launch configurations are used with Auto Scaling Groups. While launch templates are used when you launch an instance using the aws EC2 console, an AWS SDK, or a command line tool. Launch templates enable you to store the parameters (AMI, instance type, security groups, and key pairs etc.)
+
+
+
+

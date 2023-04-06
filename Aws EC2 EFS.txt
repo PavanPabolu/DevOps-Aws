@@ -1,0 +1,72 @@
+Types of Ec2 instance
+https://youtube.com/clip/Ugkxu77rjrJIAxgEBreEvlHaDZ6mLNyt1xcO
+Ondemand
+Reserved
+spot instance
+dedicated
+
+
+AWS Solutions Associate Architect Associate
+https://notes.arkalim.org/notes/aws%20solutions%20architect%20associate/aws%20solutions%20architect%20associate%20(saa-c02)/
+
+AWS Quiz
+https://docs.google.com/forms/d/e/1FAIpQLSd_nFoKiaGGEYl_58lT3aK4LQ9D8iCBRKQAnCN3MIR_SlFdUw/viewscore?viewscore=AE0zAgDSb-tTcWaqcBp1YUfXQjDNDwYyIcwOPDDPrb37a1oIGodS-RThpw03PGNTHw
+https://docs.google.com/forms/d/e/1FAIpQLSd_nFoKiaGGEYl_58lT3aK4LQ9D8iCBRKQAnCN3MIR_SlFdUw/viewscore?pli=1&pli=1&viewscore=AE0zAgClLz1jolV8EqGuWKvRq5H-B8ahrtflNpbErTAcjk091PhQ91iIH8u0c0RVHQ
+https://docs.google.com/forms/d/e/1FAIpQLSd_nFoKiaGGEYl_58lT3aK4LQ9D8iCBRKQAnCN3MIR_SlFdUw/viewform
+
+
+Module 4: VPC Assignment - 4
+https://docs.google.com/document/d/e/2PACX-1vSguJcra-PHktvJYP4ZP-4D1EXI_d4qSiOLOnb1ta0nKCAXjrQEaO-8tkzWmnyq-55ruRZqUoNcuBa_/pub
+
+
+
+
+
+
+
+
+Elastic File System(EFS):
+------------------------
+Elastic File System — is a Network File System that can be created and mounted to EC2 instances. (File sharing btw two ec2 instances)
+One of the advantages of EFS is that you don't need to provision the size, as you would need to do with a disk drive (ESB), and you can mount it in several EC2 Linus instances at the same time, making it an easy way to share files between these EC2 instances.
+
+
+Mounting EFS in 2 approaches: 
+1. Using Ec2 Launch wizard
+2. Using EFS mount helper (amazon)
+
+
+
+Create an Amazon EFS File System and Mount to an EC2 Instance
+https://medium.com/devops-cloud-it-career/create-an-amazon-efs-file-system-and-mount-to-an-ec2-instance-a1bb3c341914
+
+
+Create and mount an Amazon EFS file system - using Amazon EC2 Launch Instance Wizard
+https://aws.amazon.com/getting-started/hands-on/create-mount-amazon-efs-file-system-on-amazon-ec2-using-launch-wizard/
+
+Create and mount an Amazon EFS file system - Using EFS mount helper to mount EFS file systems
+https://docs.aws.amazon.com/efs/latest/ug/efs-mount-helper.html
+
+Mounting on Amazon EC2 Linux instances using the EFS mount helper
+https://docs.aws.amazon.com/efs/latest/ug/mounting-fs-mount-helper-ec2-linux.html
+
+https://stackoverflow.com/questions/59701689/ec2-instance-connect-there-was-a-problem-setting-up-the-instance-connection
+In order to connect to your instance with "EC2 Instance Connect (browser-based SSH connection)" you need to install ec2-instance-connect to your AMI.
+Try connecting to your instance via "A standalone SSH client" (eg. putty) and installing it with a command:
+sudo yum install ec2-instance-connect
+or (for Ubuntu):
+sudo apt-get install ec2-instance-connect 
+To me this worked, and I could then easily access my instance via browser next time.
+The more detailed explanation is found here: https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-connect-set-up.html
+
+
+Mounting on Amazon EC2 Linux instances using the EFS mount helper
+https://docs.aws.amazon.com/efs/latest/ug/mounting-fs-mount-helper-ec2-linux.html
+
+Connect to your Linux instance from Windows using PuTTY
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html
+
+
+
+
+

@@ -1,0 +1,6 @@
+
+Docker process
+
+Source code -> package -> docker file -> Image -> container
+
+18-jan 20:36 sec

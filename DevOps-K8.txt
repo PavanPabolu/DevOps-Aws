@@ -1,0 +1,94 @@
+
+K8
+Kubernetes is a container orchestration tool that helps with the deployment and management of containers.
+
+Within Kubernetes, a container runs logically in a pod, which can be represented as one instance of a running service. Pods are ephemeral and not self-healing, which makes them fragile. They can go down when an interruption occurs on the server, during a brief network problem, or due to a minimal memory issue—and it can bring down your entire application with it. Kubernetes deployments help to prevent this downtime.
+
+In a deployment, you can describe the desired state for your application and Kubernetes will constantly check if this state is matched. A deployment will create ReplicaSets which then ensures that the desired number of pods are running. If a pod goes down due to an interruption, the ReplicaSets controller will notice that the desired state does not match the actual state, and a new pod will be created.
+
+Deployments offer:
+High availability of your application (pods) by creating a ReplicaSets
+(Auto)scaling of pods
+Multiple strategies to deploy your application
+The possibility to rollback to an earlier revision of your deployment
+
+What Is a Kubernetes Service?
+Deployments make sure that your applications remain available by keeping the desired number of pods running and replacing unhealthy pods with new ones.
+Knowing that a pod has an IP that can change when it’s replaced with a new pod, you can anticipate the IP of your application changing frequently. If you have multiple pods running your application, you’ll have multiple frequently changing IPs for your application. This makes it challenging to establish stable communication between the outside world and your application, and between multiple applications inside your cluster.
+
+A Kubernetes service is the solution to this problem. A service consists of a set of iptables rules within your cluster that turn it into a virtual component. Because it doesn’t consume memory, and it’s not a running instance, it can’t go down. A service can expose a Kubernetes deployment by offering a static IP in front of it, and instead of talking to the pods, you would talk to the service, which then routes the traffic to the pods. The internal DNS in a Kubernetes cluster even makes it possible to talk to a service using an FQDN instead of an IP.
+
+Finally, it doesn’t matter on which node a pod is deployed, the service will choose a pod using the round-robin algorithm.
+
+Kubernetes offers three types of services.
+ClusterIP
+NodePort
+Load Balancer
+
+
+
+
+What is Kubernetes used for?
+Kubernetes keeps track of your container applications that are deployed into the cloud. It restarts orphaned containers, shuts down containers when they’re not being used, and automatically provisions resources like memory, storage, and CPU when necessary.
+
+How does Kubernetes work with Docker?
+Actually, Kubernetes supports several base container engines, and Docker is just one of them. The two technologies work great together, since Docker containers are an efficient way to distribute packaged applications, and Kubernetes is designed to coordinate and schedule those applications.
+
+How do I use Kubernetes?
+If you’re interested in trying Kubernetes out, you can install Minikube as a local testing environment. When you’re ready to try Kubernetes out for real, you’ll use kubectl to deploy your application managed by Kubernetes.
+
+
+--------------------------------------------------------------------------------------------------------------------------
+
+How Kubernetes works & Kubernetes terminology and architecture(Pods, Deployments, Services, Nodes)
+https://sensu.io/blog/how-kubernetes-works
+
+Deploy a sample application
+https://docs.aws.amazon.com/eks/latest/userguide/sample-deployment.html
+
+Exposing Kubernetes Applications, Part 3: NGINX Ingress Controller
+https://aws.amazon.com/blogs/containers/exposing-kubernetes-applications-part-3-nginx-ingress-controller/
+
+
+https://www.armosec.io/blog/kubernetes-deployment-and-service/
+
+https://minikube.sigs.k8s.io/docs/start/
+
+
+
+
+2  sudo apt update
+3  sudo apt install docker.io
+5  curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube_latest_amd64.deb ==> To install the latest minikube stable release on x86-64 Linux using Debian package
+6  sudo dpkg -i minikube_latest_amd64.deb
+
+10  sudo chmod 777 /var/run/docker.sock
+11  minikube start    To start cluster  && minikube status
+12  sudo snap install kubectl --classic
+13  kubectl get po -A   To access shiny new cluster
+14  minikube addons enable ingress         Enable ingress addon
+	 kubectl create deployment nginx --image=nginx --port=80
+
+15  kubectl expose deploy nginx --type NodePort
+
+17  kubectl get svc -A
+18  nano ingress.yaml
+
+31  nano ingress.yaml
+32  kubectl apply -f ingress.yaml
+33  kubectl port-forward service/ingress-nginx-controller -n ingress-nginx --address 0.0.0.0 :443
+34  hisotry
+
+
+
+
+
+
+
+
+
+
+
+
+
+

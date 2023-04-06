@@ -1,0 +1,116 @@
+
+https://www.simplilearn.com/average-annual-salary-of-an-aws-solutions-architect-article
+Top 100+ AWS Interview Questions and Answers for 2023
+
+Google search "aws solution architect interview questions"
+
+https://www.simplilearn.com/tutorials/aws-tutorial/aws-interview-questions
+https://www.naukri.com/learning/articles/top-aws-interview-questions-answers/
+https://www.interviewhelp.io/blog/posts/what-to-expect-solution-architect-interview-for-amazon-and-google-solution-architecture-for-aws-and-google-cloud/
+
+
+
+
+
+
+https://www.simplilearn.com/learn-aws-basics-free-training-course-skillup?utm_source=frs&utm_medium=skillup-course-banner&utm_campaign=frs-tutorial-skillup-course-promotion
+
+https://www.simplilearn.com/tutorials/aws-tutorial/what-is-aws
+
+https://www.simplilearn.com/tutorials/aws-tutorial/how-to-become-aws-solution-architect
+
+
+
+Cloud computing is quickly becoming the norm among enterprises that want more flexibility, greater efficiencies, lower costs, and improved disaster recovery—to name only a few of the benefits. Cloud computing providers are there to make the migrations happen, leading to stiff competition in the cloud-computing space.
+
+
+AWS Solutions Architect Interview Questions and Answers
+1. What is Amazon EC2?
+EC2 is short for Elastic Compute Cloud, and it provides scalable computing capacity. Using Amazon EC2 eliminates the need to invest in hardware, leading to faster development and deployment of applications. You can use Amazon EC2 to launch as many or as few virtual servers as needed, configure security and networking, and manage storage. It can scale up or down to handle changes in requirements, reducing the need to forecast traffic. EC2 provides virtual computing environments called “instances.”
+
+2. What Are Some of the Security Best Practices for Amazon EC2?
+Security best practices for Amazon EC2 include using Identity and Access Management (IAM) to control access to AWS resources; restricting access by only allowing trusted hosts or networks to access ports on an instance; only opening up those permissions you require, and disabling password-based logins for instances launched from your AMI.
+
+3. What is Amazon S3? 
+S3 is short for Simple Storage Service, and Amazon S3 is the most supported storage platform available. S3 is object storage that can store and retrieve any amount of data from anywhere. Despite that versatility, it is practically unlimited as well as cost-effective because it is storage available on demand. In addition to these benefits, it offers unprecedented levels of durability and availability. Amazon S3 helps to manage data for cost optimization, access control, and compliance. 
+
+4. Can S3 Be Used with EC2 Instances, and If Yes, How?
+Amazon S3 can be used for instances with root devices backed by local instance storage. That way, developers have access to the same highly scalable, reliable, fast, inexpensive data storage infrastructure that Amazon uses to run its own global network of websites. To execute systems in the Amazon EC2 environment, developers load Amazon Machine Images (AMIs) into Amazon S3 and then move them between Amazon S3 and Amazon EC2.
+
+Amazon EC2 and Amazon S3 are two of the best-known web services that make up AWS.
+
+5. What Is Identity and Access Management (IAM) and How Is It Used?
+Identity and Access Management (IAM) is a web service for securely controlling access to AWS services. IAM lets you manage users, security credentials such as access keys, and permissions that control which AWS resources users and applications can access.
+
+6. What Is Amazon Virtual Private Cloud (VPC) and Why Is It Used?
+A VPC is the best way of connecting to your cloud resources from your own data center. Once you connect your datacenter to the VPC in which your instances are present, each instance is assigned a private IP address that can be accessed from your data center. That way, you can access your public cloud resources as if they were on your own private network.
+
+7. What Is Amazon Route 53?
+Amazon Route 53 is a scalable and highly available Domain Name System (DNS). The name refers to TCP or UDP port 53, where DNS server requests are addressed.
+
+8. What Is Cloudtrail and How Do Cloudtrail and Route 53 Work Together? 
+CloudTrail is a service that captures information about every request sent to the Amazon Route 53 API by an AWS account, including requests that are sent by IAM users. CloudTrail saves log files of these requests to an Amazon S3 bucket. CloudTrail captures information about all requests. You can use information in the CloudTrail log files to determine which requests were sent to Amazon Route 53, the IP address that the request was sent from, who sent the request, when it was sent, and more.
+
+Cloud Architect Master's
+9. When Would You Prefer Provisioned IOPS over Standard Rds Storage?
+You would use Provisioned IOPS when you have batch-oriented workloads. Provisioned IOPS delivers high IO rates, but it is also expensive. However, batch processing workloads do not require manual intervention. 
+
+10. How Do Amazon Rds, Dynamodb, and Redshift Differ from Each Other?
+Amazon RDS is a database management service for relational databases. It manages patching, upgrading, and data backups automatically. It’s a database management service for structured data only. On the other hand, DynamoDB is a NoSQL database service for dealing with unstructured data. Redshift is a data warehouse product used in data analysis.
+
+11. What Are the Benefits of AWS’s Disaster Recovery?
+Businesses use cloud computing in part to enable faster disaster recovery of critical IT systems without the cost of a second physical site. The AWS cloud supports many popular disaster recovery architectures ranging from small customer workload data center failures to environments that enable rapid failover at scale. With data centers all over the world, AWS provides a set of cloud-based disaster recovery services that enable rapid recovery of your IT infrastructure and data.
+
+
+
+AWS General:
+-----------
+What are the 3 pricing models of AWS?
+There are three fundamental drivers of cost with AWS: compute, storage, and outbound data transfer.
+
+What are the 3 major pricing methods?
+The 3 Most Common Pricing Strategies
+Cost-based or cost-plus pricing.
+Market-based pricing.
+Value-based pricing.
+
+What are the 4 types of pricing methods?
+There are many different pricing strategies, but Competitive Pricing, Cost-plus Pricing, Markup Pricing and Demand Pricing are four common methods for small business owners to use.
+
+Which are advantages of reserved capacity with AWS?
+Save Money and Maintain Flexibility
+For certain services like Amazon EC2 and Amazon RDS, you can invest in reserved capacity. With Reserved Instances, you can save up to 75% over equivalent on-demand capacity.
+
+
+EC2:
+----
+What are the three types of EC2 Instances?
+AWS provides four main options to purchase Amazon EC2 Instances. They are On-Demand Instances, Reserved Instances, Spot Instances, and Savings Plans.
+
+What is difference between on Demand reserved and spot Instances?
+The purchasing option that you choose affects the lifecycle of the instance. For example, an On-Demand Instance runs when you launch it and ends when you terminate it. A Spot Instance runs as long as capacity is available and your maximum price is higher than the Spot price.
+
+What is on Demand and reserved?
+Image result for aws on-demand vs reserved vs spot
+On Demand and Reserved Instances — What's the Difference? There is no functional difference between On-Demand and Reserved Instances — it's all in the billing. A Reserved Instance (RI) is an instance rented for a fixed period of time at a lower rate (per-hour or per-second) than basic AWS On- Demand instances.
+
+How do I know if my instance is spot or on Demand?
+In the navigation pane, choose Instances. In the top right corner, choose the Show/Hide icon, and then select Lifecycle. For each instance, Lifecycle is either normal, spot, or scheduled.
+
+The ONLY difference is in billing and availability.
+With a reserved instance, you get a 25-50% discount off a FULLY utilized On-Demand instance — an Instance that is used 24×7 for the entire term of the Reserved Instance purchase OF THE SAME INSTANCE TYPE.
+
+What is on-demand instances in AWS?
+On-Demand Instances let you pay for compute capacity by the hour or second (minimum of 60 seconds) with no long-term commitments. This frees you from the costs and complexities of planning, purchasing, and maintaining hardware and transforms what are commonly large fixed costs into much smaller variable costs.
+
+What is AWS reserved Instances?
+An Amazon Reserved Instance (RI) is a billing discount that allows you to save on your Amazon EC2 usage costs. When you purchase a Reserved Instance, you can set attributes such as instance type, platform, tenancy, Region, or Availability Zone (optional).
+
+What are the main benefits of on-Demand EC2 Instances?
+With On-Demand Instances, you pay for compute capacity by the second with no long-term commitments. You have full control over its lifecycle—you decide when to launch, stop, hibernate, start, reboot, or terminate it. There is no long-term commitment required when you purchase On-Demand Instances.
+
+Can I use spot and on-Demand instance with Autoscaling group?
+You can launch and automatically scale a fleet of On-Demand Instances and Spot Instances within a single Auto Scaling group. In addition to receiving discounts for using Spot Instances, you can use Reserved Instances or a Savings Plan to receive discounted rates of the regular On-Demand Instance pricing.
+
+When should I use Spot Instances?
+You can use Spot Instances for applications and workloads that require a fast network, quick storage, massive amounts of memory, and high computing capabilities. AI- and ML-powered applications can be costly on GPU instances, making Spot Instances the best option.
