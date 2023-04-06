@@ -1,0 +1,8 @@
+Product		  Owner
+------------------
+Git			    Microsoft 2014
+Jenkins		  Oracle
+Docker
+K8s			    Google
+Terrform	  Harshicorp	2014
+Ansible		
